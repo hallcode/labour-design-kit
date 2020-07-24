@@ -50,11 +50,11 @@ h6 {
 }
 
 a {
-  color: #3566aa;
+  color: #347f6d;
 }
 
 a:hover {
-  color: #294f83;
+  color: #255b4e;
 }
 
 a:focus {
@@ -186,20 +186,23 @@ select:focus {
 }
 
 button, .button, input[type=button], input[type=reset], input[type=submit] {
-  border-radius: 0;
+  border-radius: 2px;
   outline: none;
-  font-size: 14pt;
-  border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.21);
-  padding: 8px 10px 7px;
+  font-size: 12pt;
+  font-weight: 500;
+  font-family: system-ui, "system";
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  padding: 6px 10px 8px;
   color: #262628;
   text-decoration: none;
   background-color: #f2f2f2;
   color: rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 0px 5px -3px #262628;
 }
 button:hover, .button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
   cursor: pointer;
   background-color: #dfdfdf;
+  color: rgba(0, 0, 0, 0.88);
 }
 button.color-red, .button.color-red, input[type=button].color-red, input[type=reset].color-red, input[type=submit].color-red {
   background-color: #bd3a42;
@@ -207,6 +210,7 @@ button.color-red, .button.color-red, input[type=button].color-red, input[type=re
 }
 button.color-red:hover, .button.color-red:hover, input[type=button].color-red:hover, input[type=reset].color-red:hover, input[type=submit].color-red:hover {
   background-color: #922d33;
+  color: rgba(255, 255, 255, 0.76);
 }
 button.color-green, .button.color-green, input[type=button].color-green, input[type=reset].color-green, input[type=submit].color-green {
   background-color: #4daa34;
@@ -214,6 +218,7 @@ button.color-green, .button.color-green, input[type=button].color-green, input[t
 }
 button.color-green:hover, .button.color-green:hover, input[type=button].color-green:hover, input[type=reset].color-green:hover, input[type=submit].color-green:hover {
   background-color: #3a7f27;
+  color: rgba(255, 255, 255, 0.76);
 }
 button.color-blue, .button.color-blue, input[type=button].color-blue, input[type=reset].color-blue, input[type=submit].color-blue {
   background-color: #3566aa;
@@ -221,6 +226,7 @@ button.color-blue, .button.color-blue, input[type=button].color-blue, input[type
 }
 button.color-blue:hover, .button.color-blue:hover, input[type=button].color-blue:hover, input[type=reset].color-blue:hover, input[type=submit].color-blue:hover {
   background-color: #284c7f;
+  color: rgba(255, 255, 255, 0.76);
 }
 button.color-yellow, .button.color-yellow, input[type=button].color-yellow, input[type=reset].color-yellow, input[type=submit].color-yellow {
   background-color: #ddd83c;
@@ -236,16 +242,24 @@ button.color-primary, .button.color-primary, input[type=button].color-primary, i
 button.color-primary:hover, .button.color-primary:hover, input[type=button].color-primary:hover, input[type=reset].color-primary:hover, input[type=submit].color-primary:hover {
   background-color: #0cbb98;
 }
-button:active, .button:active, input[type=button]:active, input[type=reset]:active, input[type=submit]:active {
-  box-shadow: 0 0 0 3px inset #eee82b;
-  border: none;
-  transform: translateY(2px);
+button.color-link, .button.color-link, input[type=button].color-link, input[type=reset].color-link, input[type=submit].color-link {
+  background-color: #347f6d;
+  color: rgba(255, 255, 255, 0.76);
+}
+button.color-link:hover, .button.color-link:hover, input[type=button].color-link:hover, input[type=reset].color-link:hover, input[type=submit].color-link:hover {
+  background-color: #24574b;
+  color: rgba(255, 255, 255, 0.76);
 }
 button:focus, button[type=file]:focus-within, .button:focus, .button[type=file]:focus-within, input[type=button]:focus, input[type=button][type=file]:focus-within, input[type=reset]:focus, input[type=reset][type=file]:focus-within, input[type=submit]:focus, input[type=submit][type=file]:focus-within {
   background-color: #eee82b;
-  box-shadow: 0 2px 0 0 #19293a;
+  box-shadow: 0 2px 0 0 #19293a, 0px 0px 5px -3px rgba(0, 0, 0, 0.21);
   border-bottom: none;
   color: #19293a;
+}
+button:active, .button:active, input[type=button]:active, input[type=reset]:active, input[type=submit]:active {
+  box-shadow: inset 0px 0px 7px -4px rgba(0, 0, 0, 0.77);
+  transform: translateY(2px);
+  background-color: #eee82b;
 }
 
 table {
