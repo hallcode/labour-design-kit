@@ -8,7 +8,7 @@ button, .button, input[type=button], input[type=reset], input[type=submit] {
     border: none;
     vertical-align: middle;
     background: #f8f8f8 linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
     font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     margin: 0em 0.25em 0em 0em;
     padding: .88em 1.5em 1em;
@@ -19,44 +19,61 @@ button, .button, input[type=button], input[type=reset], input[type=submit] {
     font-style: normal;
     text-align: center;
     text-decoration: none;
-    border-radius: 0.4em;
-    box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset, 0px -0.3em 0px 0px rgba(34, 36, 38, 0.15) inset;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset, 0px -0.3em 0px 0px rgba(34, 36, 38, 0.15) inset, 2px 2px 2px inset rgba(255,255,255,.26);
     user-select: none;
     transition: opacity 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease, color 0.1s ease, background 0.1s ease;
 
     &:hover {
-        color: rgba(0, 0, 0, 0.6);
+        background: #eeeeee linear-gradient(transparent, rgba(0, 0, 0, 0.05));
     }
 
     &:focus, &[type=file]:focus-within {
-        color: rgba(0, 0, 0, 0.6);
         outline: 3px solid saturate($yellow, 15%);;
     }
 
     &.color-primary {
         background: $primary linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+        color: rgba(255, 255, 255, 0.9);
+        &:hover {
+            background: saturate(lighten($primary, 3%), 12%) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+        }
     }
 
     &.color-green {
+        color: rgba(255, 255, 255, 0.9);
         background: $green linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+        &:hover {
+            background: saturate(lighten($green, 3%), 12%) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+        }
     }
 
     &.color-red {
+        color: rgba(255, 255, 255, 0.9);
         background: $red linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-        color: rgba(255, 255, 255, 0.86);
+        &:hover {
+            background: saturate(lighten($red, 3%), 12%) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+        }
     }
 
     &.color-blue {
+        color: rgba(255, 255, 255, 0.9);
         background: $blue linear-gradient(transparent, rgba(0, 0, 0, 0.05));
-        color: rgba(255, 255, 255, 0.86);
+        &:hover {
+            background: saturate(lighten($blue, 3%), 12%) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+        }
     }
 
     &.color-yellow {
+        color: rgba(255, 255, 255, 0.9);
         background: $yellow linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+        &:hover {
+            background: saturate(lighten($yellow, 3%), 12%) linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+        }
     }
 
     &:active {
-        box-shadow: 0px 0px 6px -2px inset rgba(47, 48, 48, 0.25);
+        box-shadow: 0px 0px 6px -2px inset rgba(47, 48, 48, 0.33);
         outline: none;
     }
 
