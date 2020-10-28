@@ -43,7 +43,10 @@ span.tg-checkbox {
         &:disabled ~ label {
             color: darken($light-grey, 33%);
             &::before {
-                border-color: darken($light-grey, 33%);
+                border-color: darken($light-grey, 33%) !important;
+            }
+            &::after {
+                border-color: darken($light-grey, 33%) !important;
             }
         }
             

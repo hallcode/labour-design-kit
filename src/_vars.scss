@@ -1,13 +1,13 @@
 // Colours
-$primary: #00ffcc;
-$blue:    #3566aa;
-$green:   #4daa34;
-$red:     #bd3a42;
+$primary: #f74856;
+$blue:    #2e69bb;
+$green:   #52bd35;
+$red:     #ce3741;
 $lab-red: #e4003b;
-$yellow:  #ddd83c;
+$yellow:  #ebe537;
 
 $black-blue: #19293a;
 $black-grey: #262628;
 $light-grey: #f2f2f2;
 
-$link: #347f6d;
+$link: darken($primary, 10%);
